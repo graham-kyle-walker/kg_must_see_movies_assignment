@@ -16,5 +16,4 @@ class ReviewResource < ApplicationResource
              foreign_key: :movie_id
 
   # Indirect associations
-
 end

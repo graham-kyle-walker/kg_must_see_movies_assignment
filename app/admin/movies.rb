@@ -1,6 +1,5 @@
 ActiveAdmin.register Movie do
-
- permit_params :title, :year, :description, :duration, :director_id, :movie_img
+  permit_params :title, :year, :description, :duration, :director_id, :movie_img
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -14,5 +13,4 @@ ActiveAdmin.register Movie do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  
 end

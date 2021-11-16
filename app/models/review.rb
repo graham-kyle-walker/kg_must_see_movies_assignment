@@ -4,8 +4,8 @@ class Review < ApplicationRecord
   belongs_to :user
 
   belongs_to :recommendation,
-             :class_name => "Movie",
-             :foreign_key => "movie_id"
+             class_name: "Movie",
+             foreign_key: "movie_id"
 
   # Indirect associations
 
@@ -16,5 +16,4 @@ class Review < ApplicationRecord
   def to_s
     user.to_s
   end
-
 end
