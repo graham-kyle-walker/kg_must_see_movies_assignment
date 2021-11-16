@@ -1,6 +1,8 @@
 class Review < ApplicationRecord
   # Direct associations
 
+  belongs_to :user
+
   belongs_to :recommendation,
              :class_name => "Movie",
              :foreign_key => "movie_id"
