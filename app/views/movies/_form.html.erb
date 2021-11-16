@@ -146,7 +146,7 @@
 
     <%= f.label :movie_img %>
     <!-- Input for movie_img start -->
-    <%= f.text_field :movie_img, class: movie_img_class, placeholder: "Enter movie img" %>
+    <%= f.file_field :movie_img, class: "form-control" %>
     <!-- Input for movie_img end -->
     <% if movie_img_was_invalid %>
       <% movie.errors.full_messages_for(:movie_img).each do |message| %>
