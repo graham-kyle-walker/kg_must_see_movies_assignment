@@ -7,6 +7,10 @@ class BookmarkResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :owner,
+             resource: UserResource,
+             foreign_key: :user_id
+
   belongs_to :collection,
              resource: MovieResource,
              foreign_key: :movie_id
